@@ -12,8 +12,8 @@ public:
 		this->score=score;
 	}
 	
-	bool operator <(Student &student){
-		return this->score < student.score;
+	bool operator <(const Student &student) const{
+		return this->score > student.score;
 	}
 };
 
