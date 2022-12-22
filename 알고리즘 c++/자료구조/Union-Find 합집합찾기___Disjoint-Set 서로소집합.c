@@ -3,7 +3,7 @@
 int getParent(int parent[],int x){
 	if(parent[x]==x) return x;
 	return parent[x]=getParent(parent,parent[x]);
-} 
+}
 
 int unionParent(int parent[],int a,int b){
 	a=getParent(parent,a);
@@ -32,7 +32,7 @@ int main(void){
 	unionParent(parent,7,8);
 	//1 and 5 are connected?
 	printf("%d\n",findParent(parent,1,5));
-	unionParent(parent,1,5);
+	unionParent(parent,2,8);
 	//after union... 1 and 5 are connected?
 	printf("%d\n",findParent(parent,1,5));
 }
