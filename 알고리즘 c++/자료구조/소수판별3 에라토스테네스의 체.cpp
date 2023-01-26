@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <math.h> 
 
-//int number=100000;
 int a[100001];
 
-void primeNumberService(int number){
+void primeNumberSeive(int number){
 	for(int i=2;i<=number;i++){
 		a[i]=i;
 	}
@@ -20,6 +19,6 @@ void primeNumberService(int number){
 }
 
 int main(void){
-	primeNumberService(71);
+	primeNumberSeive(71);
 	return 0;
 }
