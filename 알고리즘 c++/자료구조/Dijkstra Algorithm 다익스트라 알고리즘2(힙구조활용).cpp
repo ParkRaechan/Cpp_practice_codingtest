@@ -30,7 +30,7 @@ void dijkstra(int start){
 		}
 	}
 }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+
 int main(void){
 	for(int i=1;i<=number;i++){
 		d[i]=INF;
