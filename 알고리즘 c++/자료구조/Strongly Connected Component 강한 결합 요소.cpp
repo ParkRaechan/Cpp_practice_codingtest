@@ -59,6 +59,7 @@ int main(void){
 	}
 	printf("Number of SCC : %d\n",SCC.size());
 	for(int i=0;i<SCC.size();i++){
+		
 		printf("%dth SCC : ",i+1);
 		for(int j=0;j<SCC[i].size();j++){
 			printf("%d ",SCC[i][j]);
