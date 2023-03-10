@@ -1,36 +1,24 @@
 #include <iostream>
-#define Max 5000
+#include <algorithm>
 using namespace std;
-
-int Arr[Max];
-int DP[Max],Len;
-string Inp;
+int p[1001];
+int pp[1001];
 int main(int argc,const char *argv[]){
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 	
-	cin>>Inp;
-	Len=Inp.length();
-	for(int i=1;i<=Len;i++){
-		Arr[i]=Inp[i-1]-'0';
-	}
+	int N;
+	cin>>N;
 	
-	if(Len==1&&Inp[0]=='0'){
-		cout<<0<<"\n";
-		return 0;
+	for(int i=1;i<=N;i++){
+		cin>>p[i];
 	}
-	DP[0]=1;
-	for(int i=1;i<=Len;i++){
-		if(Arr[i]>=1&&Arr[i]<=9){
-			DP[i]=(DP[i-1]+DP[i])%1000000;
-		}
-		if(i==1) continue;
-		int temp=Arr[i]+Arr[i-1]*10;
-		if(temp>=10&&temp<=26){
-			DP[i]=(DP[i-2]+DP[i])%1000000;
+	for(int i=1;i<=N;i++){
+		for(int j=1;j<=i;j++){
+			pp[i]=max(pp[i],pp[i-j]+p[j]);
 		}
 	}
-	cout<<DP[Len]<<"\n";
+	cout<<pp[N];
 	
 	return 0;
 }
