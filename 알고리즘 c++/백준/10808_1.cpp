@@ -7,16 +7,12 @@ int main(int argc,const char *argv[]){
 	cin.tie(NULL);
 	
 	string sente;
-	cin >> sente;
+	cin>>sente;
 	int alphab[26] = { 0, };
-
-	for (int i = 0; i < sente.length(); i++)
-	{
+	for (int i = 0; i < sente.length(); i++){
 		alphab[sente[i]-'a']++;
 	}
-
-	for (int i = 0; i < 26; i++)
-	{
+	for (int i = 0; i < 26; i++){
 		cout << alphab[i] << " ";
 	}
 

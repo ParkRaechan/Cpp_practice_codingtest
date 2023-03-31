@@ -9,13 +9,10 @@ int main(int argc,const char *argv[]){
 	cin.tie(NULL);
 	
 	int a;
-	
-	
 	cin>>a;
 	for(int i=0;i<a;i++){
 		cin>>array[i];
 	}
-	
 	sort(array,array+a);
 	cout<<array[0]<<" "<<array[a-1];
 	
