@@ -6,18 +6,12 @@ int main(int argc,const char *argv[]){
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 	
-	int n,index=2;
+	int n,sum=1;
 	cin>>n;
-	
-	while(1){
-		if(n==1) break;
-		else if(n%index==0){
-			cout<<index<<"\n";
-			n/=index;
-		}else{
-			index++;
-		}
+	for(int i=1;i<=n;i++){
+		sum*=i;
 	}
+	cout<<sum;
 	
 	return 0;
 }

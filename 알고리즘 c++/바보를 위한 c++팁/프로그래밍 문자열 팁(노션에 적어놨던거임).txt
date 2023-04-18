@@ -1,7 +1,9 @@
 문자열(string)->숫자(int)
-: int a= string b-'0' 
+: int a+= string b-'0' 
 숫자(int)->문자열(string)
-: string a= int b+'0' 
+: string a+= int b+'0'
+이거말고 to_string사용하삼
+11버전부터 사용가능
 
 
 문자열에서 아래와 같이 유니코드로 변환 가능
