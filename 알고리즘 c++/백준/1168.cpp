@@ -3,12 +3,14 @@
 using namespace std;
 typedef long long ll;
 ll init(vector<ll> &tree,int start,int end,int node){
-	if(start==end) return tree[node]=1;		int mid=(start+end)/2;
+	if(start==end) return tree[node]=1;
+	int mid=(start+end)/2;
 	return tree[node]=init(tree,start,mid,node*2)+init(tree,mid+1,end,node*2+1);
 }
 int get_num(vector<ll> &tree,int start,int end,int node,int index){
 	tree[node]--;
-	if(start==end) return start;	int mid=(start+end)/2;
+	if(start==end) return start;
+	int mid=(start+end)/2;
 	if(index>tree[node*2]) return get_num(tree,mid+1,end,node*2+1,index-tree[node*2]);
 	else return get_num(tree,start,mid,node*2,index);
 }
