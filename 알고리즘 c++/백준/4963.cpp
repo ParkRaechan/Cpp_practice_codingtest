@@ -11,6 +11,7 @@ void dfs(vector<int> island[],int x,int y){
 		for(int j=-1;j<=1;j++){
 			if(x+i<0||y+j<0||(i==0&&j==0)||x+i>h-1||y+j>w-1) continue;
 			if(island[x+i][y+j]==1&&visit[x+i][y+j]==false) dfs(island,x+i,y+j);
+			//Referring to #4963, reduce the for with an array and check with a method.
 		}
 	}
 }
