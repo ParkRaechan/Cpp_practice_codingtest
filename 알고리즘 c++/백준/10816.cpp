@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-int n,m,M=0;
+int n,m;
 int arr[500001];
 int number1[10000001];
 int number2[10000001];
@@ -27,7 +27,6 @@ int main(int argc,const char *argv[]){
 		cin>>arr[i];
 		if(arr[i]<0) number2[(-1)*arr[i]]++;
 		else number1[arr[i]]++;
-		if(arr[i]>M) M=arr[i];
 	}
 	sort(arr,arr+n);
 	cin>>m;
