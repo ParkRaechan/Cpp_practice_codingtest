@@ -1,0 +1,26 @@
+무식하게 경우의수 전체 다 따져보는 알고리즘이다.
+의외로 꽤 나오기때문에
+입력의 개수가 적으면 완전탐색인지 생각해보자...
+
+
+
+경우의수 전체 만들어 훑어보기
+void solve(){
+	if(v.size()==n){
+	 int index=0;
+	 for(int i=0;i<n-1;i++){
+	  index+=abs(v[i]-v[i+1]);
+	 }
+	 result=max(result,index);
+	 return;
+	}
+	for(int i=0;i<n;i++){
+	if(!visit[i]){
+	 visit[i]=true;
+	 v.push_back(arr[i]);
+	 solve();
+	 v.pop_back();
+	 visit[i]=false;
+ 	}
+ }
+}
