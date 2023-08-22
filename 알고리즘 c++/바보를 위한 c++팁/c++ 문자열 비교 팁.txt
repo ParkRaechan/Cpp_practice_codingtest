@@ -1,7 +1,0 @@
-string q1="qwe"
-
-string 비교
-q1=="qwe"
-
-string 안의 문자1개 비교
-q1[1]=='w'

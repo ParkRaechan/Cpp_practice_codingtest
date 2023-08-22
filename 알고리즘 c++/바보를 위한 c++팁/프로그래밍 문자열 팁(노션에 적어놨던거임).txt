@@ -1,5 +1,6 @@
 문자열(string)->숫자(int)
 : int a+= string b-'0' 
+-48로도 가능
 숫자(int)->문자열(string)
 : string a+= int b+'0'
 이거말고 to_string사용하삼
@@ -21,3 +22,13 @@
 숫자의 경우
 '0'-'0'=0
 '1'-'0'=1
+
+
+
+string q1="qwe"
+
+string 비교
+q1=="qwe"
+
+string 안의 문자1개 비교
+q1[1]=='w'
