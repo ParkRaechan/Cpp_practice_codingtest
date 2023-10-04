@@ -1,2 +1,6 @@
 배열 +1만큼 더 만들기
 범위 신경써서 long long인지 알아보기
+
+sort사용시 include <algorithm>
+까먹지 마시오
+
