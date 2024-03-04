@@ -3,11 +3,8 @@
 using namespace std;
 long long CalculLength(int n){
 	long long len=0;
-	for(int start=1,i=1;start<=n;start*=10,++i){
-		int end=start*10-1;
-		if(end>n) end=n;
-		len+=(long long)(end-start+1)*i;
-	}
+	for(int i=1;i<=n;i*=10) len+=n-i+1;
+	
 	return len;
 }
 int Search(int left,int right,int target){
