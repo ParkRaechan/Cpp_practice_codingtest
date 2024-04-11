@@ -4,6 +4,8 @@
 문자열(string)->숫자(int)
 : int a+= string b-'0';
 -48로도 가능
+이거말고 stoi()사용하삼
+11버전부터 사용가능
 
 숫자(int)->문자열(string)
 : string a+= int b+'0';
