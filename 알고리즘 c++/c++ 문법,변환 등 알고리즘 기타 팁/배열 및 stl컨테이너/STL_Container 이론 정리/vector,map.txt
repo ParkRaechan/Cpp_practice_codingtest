@@ -1,0 +1,12 @@
+vector-편하게 푸쉬백하고 팝할 수 있음
+(stack,queue 기능 사용가능)
+들어온순으로 찾아가기 가능
+sort할 수 있음
+
+map-범위가 매우 큰 곳에서
+특정한 곳 찾아갈때 좋음
+map<int,int> m;	int d,f;
+map[d]=f;
+d는 첫번째 int
+f는 두번째 int로
+vector와 다르게 배열arr[]과 비슷한 성격
