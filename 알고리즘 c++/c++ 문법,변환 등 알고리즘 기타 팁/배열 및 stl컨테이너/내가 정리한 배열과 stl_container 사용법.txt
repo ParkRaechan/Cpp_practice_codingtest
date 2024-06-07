@@ -29,13 +29,13 @@ priority_queue <int, vector<int>, greater<int> > pq;
 
 -set
 중복없는 상태에서
-자동정렬 필요할때 사용
+자동정렬 필요할때 사용(왠만하면 필요할 때 set사용)
 string으로 사전 자동 정렬같이
 쓸 수도 있음
 
 -map
 중복없는 상태에서
-자동정렬 필요하면서
+자동정렬 필요하면서(필요없을때 써도 됨 // 아래 용도로 사용가능)
 int,string묶음으로 써야할때 사용(key,value형태)
 중복개수 세려면 map<string,int> m로
 string s; cin>>s; m[s]++;로
