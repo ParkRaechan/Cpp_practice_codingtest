@@ -1,0 +1,5 @@
+cout<<fixed;
+cout<<precision(설정할 자릿수);
+
+위와 같이 설정함
+
