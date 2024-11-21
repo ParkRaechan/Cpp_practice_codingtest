@@ -1,5 +1,14 @@
+n =>> 설정할 자릿수를 의미한다
+
 cout<<fixed;
-cout<<precision(설정할 자릿수);
+cout.precision(n);
+
+혹은
+
+printf("%.nlf")
+
+(("%f")는 float ("%lf")는 double을 나타낼때 사용)
+
+
 
 위와 같이 설정함
-
