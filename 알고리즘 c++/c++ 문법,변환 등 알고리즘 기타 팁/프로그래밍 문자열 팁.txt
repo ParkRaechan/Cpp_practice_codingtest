@@ -1,15 +1,20 @@
 문자(char)->문자열(string)
-:char c;	string s({c});
+char c;	string s({c});
 
-문자열(string)->숫자(int)
-: int a+= string b-'0';
+문자(c)->숫자(int)
+int a = char b-'0';
 -48로도 가능
-이거말고 stoi()사용하삼
+
+숫자(int)->문자(char)
+char a = int b+'0';
+ string s;	s[i] = int b+'0';
+
+문자(string)->숫자(int)
+string s;	int a = stoi(s);
 11버전부터 사용가능
 
 숫자(int)->문자열(string)
-: string a+= int b+'0';
-이거말고 to_string사용하삼
+int a;	string s=to_string(a);
 11버전부터 사용가능
 
 아스키코드로 문자열구분 쉽다
@@ -45,3 +50,4 @@ q1=="qwe"
 
 string 안의 문자1개 비교
 q1[1]=='w'
+char a='w';    a==q1[1];    a=='w';
