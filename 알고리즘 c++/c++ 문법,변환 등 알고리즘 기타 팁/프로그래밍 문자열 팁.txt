@@ -9,13 +9,17 @@ int a = char b-'0';
 char a = int b+'0';
  string s;	s[i] = int b+'0';
 
-문자(string)->숫자(int)
+문자열(string)->숫자(int)
 string s;	int a = stoi(s);
 11버전부터 사용가능
 
 숫자(int)->문자열(string)
 int a;	string s=to_string(a);
 11버전부터 사용가능
+
+문자열 합치기
+string s1,s2; string s=s1+s2;
+
 
 아스키코드로 문자열구분 쉽다
 str[k]>='a'&&str[k]<='z'
