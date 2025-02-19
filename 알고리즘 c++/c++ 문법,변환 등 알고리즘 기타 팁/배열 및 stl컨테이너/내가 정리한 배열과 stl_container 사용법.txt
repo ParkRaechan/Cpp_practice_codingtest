@@ -6,6 +6,7 @@
 중복 순서 상관없이
 배열같이 사용하면서 ex) v[2];
 큐와 스택의 성질을 사용가능 ex) v.front; v.back;
+소모시간 적음
 
 -queue
 중복 순서 상관없이
@@ -24,7 +25,7 @@ priority_queue <int, vector<int>, greater<int> > pq;
 -stack
 중복 순서 상관없이
 말그대로 스택을 쌓듯이
-나중에 넣은 것 먼저 나가는 방식
+나중에 넣은 것이 먼저 나가는 방식
 참고로 배열같이 사용안됨 ex) st[2] 불가
 
 -set
@@ -33,6 +34,8 @@ priority_queue <int, vector<int>, greater<int> > pq;
 string으로 사전 자동 정렬같이
 쓸 수도 있음
 정렬 필요없으면 unordered_set
+find를 이용하면 빠르게 존재여부 확인가능
+iterator 사용
 
 -map
 중복없는 상태에서
@@ -42,5 +45,5 @@ int,string묶음으로 써야할때 사용(key,value형태)
 string s; cin>>s; m[s]++;로
 개조한 배열같이 만들어 중복개수 쉽게 셀 수 있음
 정렬 필요없으면 unordered_map
-
+iterator 사용
 
